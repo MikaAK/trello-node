@@ -1,6 +1,10 @@
 import {createRequest, createTrelloUrl} from './helpers'
 
 export default class Trello {
+  static getAuthorizeUrl(token) {
+    return `https://trello.com/1/connect?key=${token}&name=Edvisor&response_type=token&expiration=never&scope=read,write`
+  }
+
   constructor(appKey, secret) {
     this.key = appKey
     this.secret = secret
@@ -11,7 +15,7 @@ export default class Trello {
   }
 
   getAuthorizeUrl() {
-    return `https://trello.com/1/connect?key=${this.key}&name=Edvisor&response_type=token&expiration=never&scope=read,write`
+    return Trello.getAuthorizeUrl(this.key)
   }
 
   setToken(token) {

@@ -25,8 +25,8 @@ var Trello = (function () {
     }
   }, {
     key: 'getAuthorizeUrl',
-    value: function getAuthorizeUrl() {
-      return 'https://trello.com/1/connect?key=' + this.key + '&name=Edvisor&response_type=token&expiration=never&scope=read,write';
+    value: function getAuthorizeUrl(token) {
+      return 'https://trello.com/1/connect?key=' + (token || this.key) + '&name=Edvisor&response_type=token&expiration=never&scope=read,write';
     }
   }, {
     key: 'setToken',

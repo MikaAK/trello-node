@@ -1,1 +1,1 @@
-module.exports = require('./dist/Trello')
+module.exports = require('./dist/Trello').default
