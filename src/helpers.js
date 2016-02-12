@@ -13,12 +13,12 @@ var createTrelloUrl = function(url, key, secret) {
 
 var createRequest = function(type, url, data) {
   return new Promise(function(resolve, reject) {
-    var params = [{method: type.toUpperCase(), url}]
+    var params = {method: type.toUpperCase(), url}
 
     if (data)
-      params.push(data)
+      params.formData = data
 
-    params.push(function(err, resp, body) {
+    request(params, function(err, resp, body) {
       if (err)
         reject(err)
       else {
@@ -33,8 +33,6 @@ var createRequest = function(type, url, data) {
         resolve(data, resp)
       }
     })
-
-    request(...params)
   })
 }
 
