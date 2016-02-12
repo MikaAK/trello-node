@@ -26,12 +26,12 @@ export default class Trello {
     return createRequest('get', this.createUrl(url))
   }
 
-  post(url) {
-    return createRequest('post', this.createUrl(url))
+  post(url, data) {
+    return createRequest('post', this.createUrl(url), data)
   }
 
-  put(url) {
-    return createRequest('put', this.createUrl(url))
+  put(url, data) {
+    return createRequest('put', this.createUrl(url), data)
   }
 
   delete() {
