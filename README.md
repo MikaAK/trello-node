@@ -10,10 +10,11 @@ errors and weird symbol responses
 ## Methods
 
 There are 4 different api methods, each returns a promise
-`get` -> (url)
-`post` -> (url, data)
-`put` -> (url, data)
-`delete` -> (url)
+
+- `get` -> (url)
+- `post` -> (url, data)
+- `put` -> (url, data)
+- `delete` -> (url)
 
 There is also `getAuthorizeUrl` which allows you to get a bigger token that's longer lasting
 you can then set your token with `setToken`
