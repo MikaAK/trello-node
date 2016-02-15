@@ -4,7 +4,8 @@
   "description": "Trello client for node",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && babel src --out-dir dist"
+    "build": "rm -rf dist && babel src --out-dir dist",
+    "preversion": "npm run build"
   },
   "keywords": [
     "Trello",
