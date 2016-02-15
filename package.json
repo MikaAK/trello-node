@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf dist && babel src --out-dir dist",
     "preversion": "npm run build",
-    "preversion": "git push origin master && npm publish"
+    "postversion": "git push origin master && npm publish"
   },
   "keywords": [
     "Trello",
