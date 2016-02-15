@@ -3,10 +3,6 @@ Trello Node
 
 Provides a means to access the trello api via promises and node.
 
-#### Inspirations 
-Inspired by (adunkman/node-trello)[https://github.com/adunkman/node-trello] but was getting
-errors and weird symbol responses
-
 ## Methods
 
 ```
