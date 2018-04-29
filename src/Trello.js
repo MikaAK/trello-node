@@ -84,6 +84,10 @@ export default class Trello {
     return this.post('/cards', data)
   }
 
+  addCardLabel(cardId, labelId) {
+    return this.post(`/cards/${cardId}/idLabels`, {value: labelId})
+  }
+
   createCardLabel(cardId, labelData) {
     return this.post(`/cards/${cardId}/labels`, labelData)
   }
