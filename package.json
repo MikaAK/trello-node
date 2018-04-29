@@ -1,6 +1,6 @@
 {
   "name": "trello-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Trello client for node",
   "main": "index.js",
   "scripts": {
