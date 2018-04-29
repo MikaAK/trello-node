@@ -19,8 +19,8 @@ const attachCardsToLists = (Trello) => (lists) => {
 }
 
 export default class Trello {
-  static getAuthorizeUrl(token) {
-    return `https://trello.com/1/connect?key=${token}&name=Edvisor&response_type=token&expiration=never&scope=read,write`
+  static getAuthorizeUrl(token, name) {
+    return `https://trello.com/1/connect?key=${token}&name=${name}&response_type=token&expiration=never&scope=read,write`
   }
 
   constructor(appKey, secret) {
