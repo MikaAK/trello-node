@@ -76,4 +76,4 @@ Session.vim
 ### Sass ###
 .sass-cache/
 *.css.map
-
+dist/
